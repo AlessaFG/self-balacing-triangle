@@ -1,0 +1,15 @@
+../Core/Src/main.c:104:7:KalmanFilter	48	static
+../Core/Src/main.c:134:6:MPU6050_Init	32	static
+../Core/Src/main.c:160:6:MPU6050_Read_Accel	24	static
+../Core/Src/main.c:170:8:CalcolaPitch	88	static
+../Core/Src/main.c:186:6:HAL_TIM_PeriodElapsedCallback	40	static
+../Core/Src/main.c:237:5:main	144	static
+../Core/Src/main.c:293:6:SystemClock_Config	88	static
+../Core/Src/main.c:341:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:375:13:MX_TIM2_Init	48	static
+../Core/Src/main.c:424:13:MX_TIM6_Init	16	static
+../Core/Src/main.c:462:13:MX_TIM7_Init	16	static
+../Core/Src/main.c:500:13:MX_TIM10_Init	8	static
+../Core/Src/main.c:531:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:564:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:608:6:Error_Handler	4	static,ignoring_inline_asm
