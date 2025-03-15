@@ -78,7 +78,7 @@ void StopTimers(void) {
     Ay = 0.0f;
     Az = 0.0f;
     Gy = 0.0f;
-    duty_cycle = 4200;
+    ccr = 4200;
 }
 /* USER CODE END EV */
 
