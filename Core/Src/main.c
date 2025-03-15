@@ -95,7 +95,7 @@ float integral = 0.0, derivative = 0.0,proportional = 0.0;
 float prev_pid_output = 0.0;
 float dt_pid = 0.005;
 float pid_output = 0.0;
-uint16_t duty_cycle = 4200;
+uint16_t ccr = 4200;
 
 /* USER CODE END PFP */
 
@@ -224,8 +224,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	            pid_output = -100;
 	        }
 	        // Imposta il ciclo di lavoro PWM
-	        duty_cycle = (uint16_t)((100.0 - fabs(pid_output)) / 100.0 * 4200);
-	        __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty_cycle);
+	        ccr = (uint16_t)((100.0 - fabs(pid_output)) / 100.0 * 4200);
+	        __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, ccr);
 	    }
 	}
 /* USER CODE END 0 */
